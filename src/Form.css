@@ -1,0 +1,192 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: auto;
+}
+/* Background elements */
+.background-stack {
+    z-index: -2;
+    
+}
+
+.bg {
+    width: 100%;
+    
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.topimg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+}
+
+.bottomimg {
+    position: absolute;
+    top: 71%;
+    width: 90%;
+}
+
+/* Form container and positioning */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+/* Header styles */
+.form-header {
+    position: absolute;
+    top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.form-header h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+}
+
+.text-header {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.text-header h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0rem 3.2rem;
+}
+
+.text-header p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding: 0 3rem;
+    font-weight: 200;
+    color: rgba(235, 235, 235, 0.7);
+}
+
+/* Form styles */
+.form {
+    position: absolute;
+    top: 25%;
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 2rem;
+    position: relative;
+   
+}
+
+.title {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Input styles */
+.form input {
+    width: 100%;
+    padding: 0.7rem;
+    border: 2px dotted #ccc;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    text-indent: 10px;
+    letter-spacing: 1px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.form input:focus {
+    outline: 2px solid #FF7743;
+    border-color: transparent;
+}
+
+/* Error states */
+.form input.error {
+    border-color: #e74c3c;
+    background-color: rgba(253, 242, 242, 0.1);
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.3);
+}
+
+.form input.error:focus {
+    outline: 2px solid #e74c3c;
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.4);
+}
+
+/* Error tooltip */
+.error-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    
+    color: white;
+    padding: 8px 8px;
+    font-size: 5px;
+    border-radius: 4px;
+    margin-top: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+
+
+/* Button styles */
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 15px;
+    background-color: #e36d3f;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #EF7722;
+}
+
+
+/* Responsive adjustments */

@@ -1,0 +1,210 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+.bg{
+    width: 100%;
+    height: 100vh; 
+}
+.background-stack{
+    min-height: 100vh;
+    z-index: -2;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+ }
+.topimg{
+    width: 50%;
+    top: 0%;
+    left: 50%;
+    position: absolute;  
+}
+.bottomimg{
+    width: 90%;
+    top: 71%;
+    position: absolute;  
+}
+
+
+/* Form container and header - same as Form */
+.form-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0vh;
+    padding: 2rem;
+}
+
+.form-header {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+}
+
+/* Ticket-specific styles */
+.ticket-box {
+  
+    position: absolute;
+    top: 15%;
+    width: 90%;
+    max-width: 400px;
+    color: white;
+    text-align: center;
+    z-index: 5;
+}
+
+.ticket-box h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 1.3;
+}
+
+.ticket-box > p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* The actual ticket design */
+.ticket {
+    background: url( "./assets/pattern-ticket.svg") no-repeat ;
+    background-size:contain;
+   width: 100%;
+    height:20vh;
+   
+    border-radius: 20px;
+    padding: 1.5rem;
+    position: relative;
+   
+    margin-top: 1rem;
+}
+
+/* Ticket perforation effect */
+
+/* Ticket header with logo */
+.ticket-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    
+}
+
+
+/* User information section */
+.ticket-info {
+    text-align: left;
+}
+
+
+
+.value {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    
+}
+
+
+/* Ticket number */
+.ticket-number {
+    position: absolute;
+    right: 0rem;
+    top: 35%;
+    
+    transform: rotate(90deg);
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 2px;
+}
+
+/* GitHub icon */
+.github-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+   
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+}
+.info-row2{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+.name-color{
+  color:  rgb(232, 129, 129);
+ 
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .background-stack {
+    background-image: url( "./assets/bg-tablet.png");
+  }
+  .bottomimg{
+    width: 90%;
+    top: 53%;
+    position: absolute;  
+}
+.ticket {
+   width: 100%;
+  
+   
+
+}
+.info-row2{
+    margin-top: 1px;
+    
+}
+
+}
+
+/* Desktop: 1025px and above */
+@media (min-width: 1025px) {
+   .background-stack {
+    background-image: url( "./assets/background-desktop.png");
+  }
+  .bottomimg{
+    width: 90%;
+    top: 10%;
+    position: absolute;  
+}
+.ticket {
+   width: 90%;
+  
+   
+
+}
+.info-row2{
+    margin-top: 1px;
+    
+}
+}
