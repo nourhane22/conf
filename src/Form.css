@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +7,7 @@
 html{
     height: auto;
 }
-/* Background elements */
+/* Background */
 .background-stack {
     z-index: -2;
     
@@ -35,11 +35,11 @@ html{
 
 .bottomimg {
     position: absolute;
-    top: 71%;
+    top: 60%;
     width: 90%;
 }
 
-/* Form container and positioning */
+/* Form container a */
 .form-container {
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ html{
   
 }
 
-/* Header styles */
+/* Header  */
 .form-header {
     position: absolute;
     top: 3%;
@@ -190,3 +190,4 @@ html{
 
 
 /* Responsive adjustments */
+
