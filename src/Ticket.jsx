@@ -3,12 +3,14 @@ import background from './assets/background-mobile.png'
 import patterntop from './assets/pattern-squiggly-line-top.svg'
 import patternbuttom from './assets/pattern-squiggly-line-bottom-mobile-tablet.svg'
 import overlay from './assets/pattern-lines.svg'
-import githubIcon from './assets/icon-github.svg'
 import logo from './assets/logo-mark.svg'
-import { useState, useEffect } from 'react'
 import './Ticket.css'
 
 export default function Ticket() {
+    const location = useLocation()
+    const { name, email } = location.state || {}
+     
+
     return (
         <>
             <div className="background-stack">
@@ -26,20 +28,13 @@ export default function Ticket() {
                     <div className="ticket-box">
                         <h2>Congrats <span className="name-color">{name}</span>! Your ticket is ready</h2>
                         <p>We've emailed your tocket to <span className="name-color">{email}</span> and will send updates in the run up to the event </p>
-                        
-                        <div className="ticket">
-                          <div className="ticket-header">
-                        <img src={logo} alt="" className='logo' />
-                        <h1>Coding conf</h1>
-                    </div>
-                      
             
                     </div>
                 </div>
             </div>
-                        </div>
 
         </>
     )
 
 }
+
