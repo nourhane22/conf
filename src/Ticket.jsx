@@ -9,16 +9,6 @@ import { useState, useEffect } from 'react'
 import './Ticket.css'
 
 export default function Ticket() {
-    const location = useLocation()
-    const { name, email, github } = location.state || {}
-      const [ticketNumber, setTicketNumber] = useState("")
-
-  useEffect(() => {
-    // generate random number between 10000 and 99999
-    const randomNum = Math.floor(10000 + Math.random() * 90000)
-    setTicketNumber(`#${randomNum}`)
-  }, [])
-
     return (
         <>
             <div className="background-stack">
@@ -42,21 +32,14 @@ export default function Ticket() {
                         <img src={logo} alt="" className='logo' />
                         <h1>Coding conf</h1>
                     </div>
-                            <div className="ticket-info">
-                                <div className="info-row">
-                                    <span className="label"></span>
-                                    <span className="value">{name || 'N/A'}</span>
-                                </div>
-                                <div className="info-row2">
-                                    <span className="label"><img src={githubIcon} alt="" srcset="" /></span>
-                                    <span className="value">{github || 'N/A'}</span>
-                                </div>
-                                <h2 className="ticket-number" > {ticketNumber} </h2>
-                            </div>
-                        </div>
+                      
+            
                     </div>
                 </div>
             </div>
+                        </div>
+
         </>
     )
+
 }
