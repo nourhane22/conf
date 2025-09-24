@@ -91,76 +91,7 @@
 }
 
 /* The actual ticket design */
-.ticket {
-    background: url( "./assets/pattern-ticket.svg") no-repeat ;
-    background-size:contain;
-   width: 100%;
-    height:20vh;
-   
-    border-radius: 20px;
-    padding: 1.5rem;
-    position: relative;
-   
-    margin-top: 1rem;
-}
 
-/* Ticket perforation effect */
-
-/* Ticket header with logo */
-.ticket-header {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-    
-}
-
-
-/* User information section */
-.ticket-info {
-    text-align: left;
-}
-
-
-
-.value {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: white;
-    
-}
-
-
-/* Ticket number */
-.ticket-number {
-    position: absolute;
-    right: 0rem;
-    top: 35%;
-    
-    transform: rotate(90deg);
-    font-size: 1rem;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.6);
-    letter-spacing: 2px;
-}
-
-/* GitHub icon */
-.github-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    vertical-align: middle;
-   
-    filter: brightness(0) invert(1);
-    opacity: 0.7;
-}
-.info-row2{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 0.1rem;
-}
 .name-color{
   color:  rgb(232, 129, 129);
  
@@ -174,17 +105,6 @@
     top: 53%;
     position: absolute;  
 }
-.ticket {
-   width: 100%;
-  
-   
-
-}
-.info-row2{
-    margin-top: 1px;
-    
-}
-
 }
 
 /* Desktop: 1025px and above */
@@ -197,14 +117,5 @@
     top: 10%;
     position: absolute;  
 }
-.ticket {
-   width: 90%;
-  
-   
 
-}
-.info-row2{
-    margin-top: 1px;
-    
-}
 }
